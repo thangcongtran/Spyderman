@@ -1,4 +1,4 @@
-# Spyderman Project
+# Spyderman
 
 **Disclaimer:** This project is for educational purposes only. It demonstrates concepts related to system information gathering, file manipulation, and email operations. The project should not be used for malicious activities, and the author does not endorse any illegal use of this code. Always ensure that your actions comply with legal guidelines and ethical standards.
 
