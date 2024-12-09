@@ -1,0 +1,13 @@
+opencv-python
+pillow
+pyautogui
+appdirs
+psutil-6.1.0
+pypdf2
+openpyxl
+python-docx 
+rarfile
+pandas
+xlrd
+vobject
+pdfplumber
