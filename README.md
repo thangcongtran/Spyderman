@@ -57,7 +57,7 @@ The **Spyderman** project is a Python-based tool that combines various functiona
   - `threading`
  
 ### Create account gmail server //CHANGE LINE 203, 469, 484
-## Set Up Gmail for SMTP Using App Passwords (Recommended for Accounts with 2FA Enabled)
+## Set Up Gmail for SMTP Using App Passwords 
 
 If you have **two-factor authentication (2FA)** enabled (which is recommended for extra security), you will need to generate an **App Password** to use Gmail's SMTP server for sending emails programmatically.
 
