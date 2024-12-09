@@ -114,7 +114,7 @@ If you have **two-factor authentication (2FA)** enabled (which is recommended fo
 4. **Sensitive Data**: Ensure that you're not violating the privacy of others by collecting sensitive data without proper consent. Respect users' privacy rights.
 
 
-### Example Usage:
+### Example Usage Gmails:
 
 ```python
 import smtplib
